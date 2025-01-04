@@ -1,0 +1,485 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.2rem;
+}
+
+h3{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-size: 0.7rem;
+    letter-spacing: 0.04rem;
+    line-height: 0.5rem;
+    color: #6e6e6e;
+}
+
+p{
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.01rem;
+    text-decoration: none;
+}
+
+/* LOAD IN ANIMATION---------------------------------------------------------------------------- */ 
+/* @keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.95;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+} */
+
+.block{
+    animation: appear ease;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+/* ANYTHING WHITE *--------------------------------------------------------------------------- */
+[class*="white"] {
+    color: white;
+  }
+
+p.white{
+    color:#d1d1d1;
+}
+
+[class*="black"] {
+    color: rgb(0, 0, 0);
+  }
+
+/* BLACK BACKGROUND *--------------------------------------------------------------------------- */
+.dark-background{
+    background-color: #0D0D0D;
+    color: white; /* Optional: changes text color to white for contrast */
+}
+
+.light-background{
+    background-color: #ffffff;
+    /* color: rgb(0, 0, 0); Optional: changes text color to white for contrast */
+}
+
+/* NAV (General) */ /* --------------------------------------------------------------------------- */
+nav{
+    margin-right: 2rem;
+    mix-blend-mode: difference;
+    margin-left: 1.25%;
+}
+
+.navbar-brand{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Static Nav */
+.nav-items-static a{
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+nav .nav-items-static a:hover{
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+/* --------------------------------------------------------------------------- */
+
+
+/* NAV for home screen */
+/* --------------------------------------------------------------------------- */
+.navbar.fixed-top {
+    z-index: 1030; /* Default Bootstrap navbar z-index */
+    position: fixed; /* Ensure it remains at the top of the viewport */
+  }
+  
+  #short-bio-container {
+    z-index: 1040; /* Higher than the navbar */
+    position: relative; /* Required for z-index to take effect */
+  }
+
+
+  #short-bio-container 
+  .nav-options{
+    font-weight: 300;
+  }
+
+        /* Hidden NAV */
+        .nav-items-dynamic {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+          }
+          
+          .nav-items-dynamic.visible {
+            opacity: 1;
+            transform: translateY(0);
+          }
+
+
+          /* Styling of Hidden NAV */
+          nav .nav-items-dynamic a{
+            font-family: "aileron", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 0.75rem;
+            text-decoration: none;
+            transition: 0.5s ease, transform 0.5s ease;
+        }
+        
+        nav .nav-items-dynamic a:hover{
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+
+
+/* BIO UNDER NAV/* --------------------------------------------------------------------------- */
+#short-bio-container a{
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.75rem;
+    text-decoration: none;
+    color: #b1b1b1;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+#short-bio-container a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: white;
+}
+
+.light-background #short-bio-container a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: rgb(0, 0, 0);
+}
+
+#short-bio-container p{
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.6rem;
+    line-height: 0.5rem;
+    text-decoration: none;
+    color: #b1b1b1;
+}
+
+#about-bio p{
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    letter-spacing: .01rem;
+    margin-bottom: 0;
+    color: #b1b1b1;
+}
+
+/* WORK SECTION --------------------------------------------------------------------------- */
+.work-thumbnails{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.work-thumbnails h2{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    font-style: normal;
+}
+
+.gallery-row{
+    margin-top: 3%;
+}
+
+.gallery-row:last-of-type{
+    margin-bottom: 4%;
+}
+
+    /* Text for work */
+    .thumbnail-details h3{
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 300;
+        font-size: 0.6rem;
+        letter-spacing: 0.04rem;
+        line-height: 0.5rem;
+        color: #b1b1b1;
+    }
+
+    .thumbnail-details p{
+        width: 65%;
+        padding-top: 0.5rem;
+        font-family: "aileron", sans-serif;
+        font-weight: 300;
+        font-size: 0.75rem;
+        letter-spacing: .01rem;
+        line-height: 1rem;
+        color: #eeeeee;
+    }  
+
+    .thumbnail-details p {
+        opacity: 0; /* Default opacity */
+        transition: opacity 0.3s ease; /* Smooth transition */
+      }
+      
+      .gallery-row:hover .thumbnail-details p {
+        opacity: 1; /* Full opacity when hovering over the entire row */
+      }
+
+
+/* HOME SCREEN FOOTER ----------------------------------------------------------------*/
+
+.footer a{
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.8rem;
+    line-height: 0rem;
+    text-decoration: none;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+.footer a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.footer{
+    font-size: 1.2rem;
+    margin-top: 8%;
+    margin-bottom: 1.5%;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display:flex;
+    border-top: 0.3px solid;
+}
+
+/* FOR THE ABOUT PAGE */
+
+
+#footer-links{
+    margin-left: auto;
+}
+
+
+/* WORK PAGEs--------------------------------------------------------------------------- */
+.table td{
+    width: 30%;
+}
+
+.table th, td{
+    border:none;
+}
+
+#work-description-container{
+    margin-top: 15%; margin-left: 3%
+}
+
+.work-process-block{
+    margin-left: 3%;
+    margin-right: 4%;
+    margin-top: 5%;
+}
+
+.table tr, .table td, .table th{
+    background-color: transparent;
+}
+
+.light-background .line table{
+    border-top: 0.3px solid black;
+}
+
+.dark-background .line table{
+    border-top: 0.3px solid rgb(255, 255, 255);
+}
+
+.work-process-block{
+    padding-right: 1%;
+}
+
+
+.work-process-block table td{
+    width: 27%;
+    padding-right: 4%;
+    vertical-align: top;
+}
+
+.work-process-block th{
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+}
+
+/* Font */
+.work-process-block h1{
+    font-size: 1.7rem;
+    line-height: 1.3rem;
+}
+
+            /* BACK TO TOP BUTTON */
+            #back-to-top {
+                font-family: "neue-haas-grotesk", sans-serif;
+                font-weight: 300;
+                font-size: 0.7rem;
+                position: fixed; /* Sticks to a specific position */
+                bottom: 20px; /* Distance from the bottom of the viewport */
+                right: 25px; /* Distance from the right of the viewport */
+                background-color: #3e3e3e; 
+
+                color: white; /* White text */
+                border: none; /* No border */
+                border-radius: 20px; /* Rounded corners */
+                padding: 10px 15px; /* Padding inside the button */
+                cursor: pointer; /* Pointer cursor on hover */
+                mix-blend-mode: difference;
+                display: none;
+                z-index: 1000; /* Keeps it above other elements */
+                transition: 0.5s ease, transform 0.5s ease;
+            }
+            
+            #back-to-top:hover {
+                background-color: #616161; 
+            }
+
+.final_block{
+    margin-bottom: 15%;
+}
+
+/* SATO ----------------------------------------------------------------------------------------------------------- */
+#sato-poster table td:first-child{
+    width: 27%;
+}
+
+#sato-poster .work-process-block table td{
+    width: 27%;
+}
+
+
+/* CAROUSEL --------------------------------------------------------------- */
+.swiper-container {
+    width: 1080px; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the Swiper horizontally */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Ensure slides adapt to container size */
+.swiper-slide img {
+    width: 100%; /* Make images fill the slide width */
+    height: 100%; /* Ensure images scale to the container height */
+    object-fit: cover; /* Keep the image aspect ratio intact */
+}
+
+/* Scale down navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    width: 20px; /* Reduce size */
+    color: rgb(152, 152, 152) !important;
+    opacity: 30%;
+    border-radius: 50%; /* Circular buttons */
+}
+
+
+/* ABOUT PAGE ----------------------------------------------------------------------------*/
+/* Style for <th> text */
+.header-text {
+    line-height: 2rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#about-main-section{
+    display:flex;   
+}
+
+/* Style for the image container */
+.image-container {
+    max-height: 250px; /* Adjust container height */
+    max-width: 600px; /* Adjust container width */
+    padding: 1rem;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+/* Style for the image gallery */
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Ensure consistent vertical alignment */
+    flex-wrap: nowrap; /* Ensure images stay in a single line */
+
+    padding-left: 4%;
+}
+
+/* Style for images inside the gallery */
+.image-gallery img {
+    height: 400px; /* Set uniform image height */
+}
+
+
+
+/* MEDIA ----------------------------------------------------------------------------*/
+#media-section{
+    display: flex;
+    margin-top: 5%;
+}
+
+#fixed-text {
+    position: fixed;
+    width: 15%;
+    padding-left: 2%;
+}
+
+#fixed-text a {
+    color: #afafaf;
+    text-decoration: none; /* Ensure no underline by default */
+    transition: 0.5s ease, transform 0.5s ease;
+}
+
+#fixed-text a:hover {
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: underline; /* Explicitly add underline */
+    text-decoration-style: dotted; /* Make the underline dotted */
+    transform: translateX(20px);
+}
+
+.image-grid {
+    margin-left: 19%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two equal columns */
+    gap: 10px; /* Space between images */
+}
+
+.image-grid img {
+    width: 100%; /* Makes images fit their grid cells */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures images fill their space neatly */
+}
+
+.image-grid .wide{
+    grid-column: span 2;
+}

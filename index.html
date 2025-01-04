@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- doctype declaration tells the file reader (ex: browser) that we r using html
+      if ur seeing just html its html5 -->
+<html lang="en">
+  <!-- html element starts here. (starts w <html> ends with </html>) -->
+  <head>
+    <!-- head includes information about the page  -->
+    <meta charset="UTF-8" />
+    <!-- the meta charset tag declares which kinds of character are supported  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- the meta viewport tag makes thsi site responsive -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- makes site work better w microsoft browsers  -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+
+    <link rel="preload" href="example-image.jpg" as="image" type="image/jpeg">
+    <link rel="preload" href="example-image.png" as="image" type="image/png">
+
+    <title>Anna Deemol</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/drt0kot.css">
+  </head>
+<body class="dark-background">
+    <header>
+        <nav class="navbar fixed-top">
+          <div class="container-fluid">
+                <a id="white-text" class="navbar-brand white">anna/deemol</a>
+                <div class="pt-2 nav-items-dynamic">
+                  <a class = "white" href="index.html">WORK /</a>
+                  <a class = "white" href="about.html">ABOUT / </a>
+                  <a class = "white" href="media.html">MEDIA</a>
+                 </div>
+                <!-- <div class="pe-5 pt-2 nav-items-white">
+                       <a href="https://www.example.com">WORK</a>
+                      </div>
+                <div class="pe-5 pt-2 nav-items-white">
+                       <a href="https://www.example.com">ABOUT</a>
+                       </div>
+                <div class="me-5 pe-5 pt-2 nav-items-white">
+                       <a href="https://www.example.com">MEDIA</a>
+                      </div> -->
+            </div>
+        </nav>
+      <!-- CONTAINER FOR ENTIRE ROW -->
+      <div id="short-bio-container" class="mt-3 d-flex" style="margin-left: 28%;">
+
+        <!-- FIRST COLUMN WORK -->
+        <div class="pe-1 bio-content d-flex-column";>
+          <div class="pe-5 pt-2">
+            <a style="color: white;" class="nav-options white" href="index.html">WORK</a>
+           </div>      
+          <div id="Slot-1" class="pt-3">
+                    <a href="work/work_1.html">Piggy</a>
+                    <p>PRODUCT DESIGN</p>    
+                    </div>
+                 <div id="Slot-2">
+                    <a href="work/work_2.html">Humanizing Prostitution</a>
+                    <p>WEB EXPERIENCE</p>    
+                    </div>
+                 <div id="Slot-3">
+                    <a href="work/work_3.html">VML</a>
+                    <p>USER EXPERIENCE</p>    
+                    </div>
+          </div>
+        
+          <!-- SECOND COLUMN - WORK -->
+        <div class="ms-2 pt-4 bio-content d-flex-column";>
+                <br> 
+                <div id="Slot-1">
+                    <a href="work/work_4.html">Koichi Sato</a>
+                    <p>MULTIMEDIA</p>    
+                    </div>
+                 <div id="Slot-2">
+                    <a href="work/work_5.html">A Million Lives</a>
+                    <p>BRANDING/MOTION</p>    
+                    </div>
+                 <div id="Slot-3">
+                    <a href="work/work_6.html">Bosang</a>
+                    <p>BRANDING SYSTEM</p>    
+                    </div>
+          </div>
+          <div id="about-bio" class="col-3" style="margin-left: 10.6%;";>
+            <div class="pe-5 pt-2">
+              <a style="color: white;" class="nav-options" href="about.html">ABOUT</a>
+              </div>    
+            <div class="pt-4">
+                  <p>
+                    Hi, I'm Anna Chuenrudeemol!
+                  </p>
+                  
+                  <p>
+                    <br>Currently studying Commmunication 
+                    <br> Design + Human-Computer Interaction 
+                    <br><span style="font-weight:300;  font-size: 0.6rem;">@ CARNEGIE MELLON UNIVERSITY</span>
+                  </p>
+
+                  <p>
+                    <br>Previously UX/UI 
+                    <br><span style="font-weight:300;  font-size: 0.6rem;">@VML THAILAND</span>
+                  </p>
+
+                </div>
+          </div>
+
+          <!-- THIRD COLUMN (MEDIA) -->
+          <div id="media-bio" class="d-flex-column" style="margin-left: 8%; line-height: 0.8rem";>
+            <div class="me-5 pe-5" style="margin-top: 0.9rem; ">
+              <a style="color: white;" class="nav-options" href="media.html">MEDIA</a>
+             </div>
+            <div id="Slot-2" class="pt-4">
+              <a href="https://www.linkedin.com/in/anna-chuenrudeemol-1b8204256/">LinkedIn</a>
+              <br> <a href="https://www.example.com">Resume</a>
+              <br> <a href="mailto:achuenru@andrew.cmu.edu">Email</a>    
+              </div>
+          </div>
+       </div>
+    </header>
+
+<!-- WORK SECTION ----------------------------------------------------------------------->
+<section class="work-thumbnails pt-5 mt-5 container-fluid">
+  
+  <!-- Piggy -------------->
+  <div class="gallery-row row" id="work-1">
+    <div class="col-3 thumbnail-details">
+      <h2>Piggy</h2>
+      <h3>PRODUCT DESIGN  •  USER EXPERIENCE</h3>
+      <p class="hover-text">
+        Camouflaging the numerical experience of an expense splitting app with one that is social, memorable, and flexible.
+      </p>
+    </div>
+    <div id="image-thumbnail-container" class="ps-8 col-9 block">
+        <a  href = "work/work_1.html">
+        <img id="image-thumbnail" src="images/home/piggy_thumbnail.jpg" class="ps-4 img-fluid" alt="Piggy">
+        </a>
+    </div>
+  </div>
+
+  <!-- Humanizing Prostitution ---------->
+  <div class="gallery-row row" id="work-2">
+    <div class="col-3 thumbnail-details">
+      <h2>Humanizing Prostitution</h2>
+      <h3>DATA VISUALIZATION  •  WEB EXPERIENCE</h3>
+      <p class="hover-text">
+        Unmasking tales of exploitation and desperation; transforming stories of Thai prostitutes into visual narratives. 
+      </p>
+    </div>
+    <div id="image-thumbnail-container" class="ps-8 col-9 block">
+      <a  href = "work/work_2.html">
+      <img id="image-thumbnail" src="images/home/data-viz_thumbnail.png" class="ps-4 img-fluid" alt="Humanizing Prostitution">
+      </a>
+    </div>
+  </div>
+
+  <!-- VML ----------->
+  <div class="gallery-row row" id="work-2">
+    <div class="col-3 thumbnail-details">
+      <h2>VML</h2>
+      <h3>USER EXPERIENCE </h3>
+      <p class="hover-text">
+        Unmasking tales of exploitation and desperation; transforming stories of Thai prostitutes into visual narratives. 
+      </p>
+    </div>
+    <div id="image-thumbnail-container" class="ps-8 col-9 block">
+      <img id="image-thumbnail" src="images/home/vml_thumbnail.png" class="ps-4 img-fluid" alt="VML">
+    </div>
+  </div>
+
+<!-- KOICHI SATO ------->
+  <div class="gallery-row row" id="work-2">
+    <div class="col-3 thumbnail-details">
+      <h2>Koichi Sato</h2>
+      <h3>MOTION DESIGN •  INTERACTION DESIGN</h3>
+      <p class="hover-text">
+        Exploring the life and work of Koichi Sato through a poster, booklet, mobile experience, website, and animation. 
+      </p>
+    </div>
+    <div id="image-thumbnail-container" class="ps-8 col-9 block">
+      <a  href = "work/work_4.html">
+      <img id="image-thumbnail" src="images/home/sato_thumbnail.jpg" class="ps-4 img-fluid" alt="Koichi Sato">
+      </a>
+    </div>
+  </div>
+
+  <!-- A MILLION LIVES ---------->
+  <div class="gallery-row row" id="work-2">
+    <div class="col-3 thumbnail-details">
+      <h2>A Million Lives</h2>
+      <h3>MOTION DESIGN •  BRANDING • CAMPAIGN</h3>
+      <p class="hover-text">
+        Uncovering PA's current issues with broadband connectivity, and amplifying the voices of those underserved by existing broadband structures. 
+      </p>
+    </div>
+    <div id="image-thumbnail-container" class="ps-8 col-9 block">
+      <a  href = "work/work_5.html">
+      <img id="image-thumbnail" src="images/home/broadband_thumbnail.png" class="ps-4 img-fluid" alt="A Million Lives">
+      </a>
+    </div>
+  </div>
+
+  <!-- Bosang ------>
+  <div class="gallery-row row" id="work-2">
+    <div class="col-3 thumbnail-details">
+      <h2>Bosang Festival</h2>
+      <h3>BRANDING • STYLE GUIDE</h3>
+      <p class="hover-text">
+        Developing an identity system for the Bosang Umbrella Festival. Includes conceptual framework, logotype, identity guidelines, and real-life application.
+      </p>
+    </div>
+    <div id="image-thumbnail-container" class="ps-8 col-9 block">
+      <a  href = "work/work_6.html">
+      <img id="image-thumbnail" src="images/home/bosang_thumbnail_white" class="ps-4 img-fluid" alt="Bosang">
+      </a>
+    </div>
+  </div>
+</section>
+<!-- <h1>Embedded YouTube Video</h1>
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&mute=1&loop=1&playlist=dQw4w9WgXcQ&rel=0" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media; picture-in-picture" 
+    allowfullscreen>
+</iframe> -->
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GNV7ZbcmBaY?si=jc3lWlb7PAkjZTlz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+    <div  class="footer">
+      <div id="footer-caption">
+           <p class="white">Custom coded using HTML/CSS/JS <br> <span style="font-weight: 500">© 2024 Anna Chuenrudeemol</span>
+            <br><br> achuenru@andrew.cmu.edu
+          </p>
+      </div>
+      <div id="footer-links">
+        <p><a style="text-decoration: none;" class="nav-options white" href ="https://www.linkedin.com/in/anna-chuenrudeemol-1b8204256/">LinkedIn</a>
+                      <br><a style="text-decoration: none;" class="nav-options white" href="https://www.example.com">Resume</a>
+                      <br><a style="text-decoration: none;" class="nav-options white"href="https://www.example.com">Email</a></p>
+   </div>
+
+
+  <script type="text/javascript" src="MainWriting.js"></script>
+</body>
