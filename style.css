@@ -491,3 +491,47 @@ nav{
 .image-grid .wide{
     grid-column: span 2;
 }
+
+
+/* PASSWORD PROTECTION -------------------------------------------------------------------*/
+#password_enter {
+    display: flex;
+    flex-direction: column; /* Stacks the children vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100vh; /* Makes sure the section takes up the full viewport height */
+}
+
+#password_enter button{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+    line-height: 0.5rem;
+    color: white;
+    appearance: none;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+
+    margin-top: 2%;
+
+    padding: 0.7%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#password_enter input{
+    border-radius: 30px;
+    padding: 0.5%;
+    padding-left: 1%;
+    padding-right: 4%;
+    appearance: none;
+    border: 1px solid black;
+
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+
+}
