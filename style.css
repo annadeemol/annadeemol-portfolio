@@ -78,12 +78,18 @@ nav{
     margin-left: 1.25%;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 1.5rem;
+    transition: 0.5s ease, transform 0.5s ease;
 }
+
+.navbar-brand:hover {
+    color: rgba(133, 133, 133, 0.5) !important; /* Override Bootstrap's default */
+  }
+
 
 /* --------------------------------------------------------------------------- */
 /* Static Nav */
@@ -93,9 +99,11 @@ nav{
     font-style: normal;
     font-size: 0.75rem;
     text-decoration: none;
+    transition: 0.3s ease, transform 0.3s ease;
 }
 
-nav .nav-items-static a:hover{
+.nav-items-static a:hover{
+    font-weight: 600;
     text-decoration: underline;
     text-decoration-style: dotted;
 }
