@@ -160,19 +160,19 @@ nav{
 /* BIO UNDER NAV/* --------------------------------------------------------------------------- */
 #short-bio-container a{
     font-family: "aileron", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 0.75rem;
     text-decoration: none;
-    color: #b1b1b1;
     transition: 0.3s ease, transform 0.3s ease;
+    color:rgb(0, 0, 0);
 }
 
 #short-bio-container a:hover{
     font-weight: 600;
     text-decoration: underline;
     text-decoration-style: dotted;
-    color: white;
+    color:black;
 }
 
 .light-background #short-bio-container a:hover{
@@ -189,7 +189,6 @@ nav{
     font-size: 0.6rem;
     line-height: 0.5rem;
     text-decoration: none;
-    color: #b1b1b1;
 }
 
 #about-bio p{
@@ -200,7 +199,7 @@ nav{
     line-height: 0.9rem;
     letter-spacing: .01rem;
     margin-bottom: 0;
-    color: #b1b1b1;
+
 }
 
 /* WORK SECTION --------------------------------------------------------------------------- */
@@ -217,7 +216,7 @@ nav{
 }
 
 .gallery-row{
-    margin-top: 3%;
+    margin-top: 1%;
 }
 
 .gallery-row:last-of-type{
@@ -231,7 +230,7 @@ nav{
         font-size: 0.6rem;
         letter-spacing: 0.04rem;
         line-height: 0.5rem;
-        color: #b1b1b1;
+        color: #000000;
     }
 
     .thumbnail-details p{
@@ -242,7 +241,6 @@ nav{
         font-size: 0.75rem;
         letter-spacing: .01rem;
         line-height: 1rem;
-        color: #eeeeee;
     }  
 
     .thumbnail-details p {
