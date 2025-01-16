@@ -29,6 +29,10 @@ p{
     text-decoration: none;
 }
 
+img{
+    border-radius: 5px;
+}
+
 /* LOAD IN ANIMATION---------------------------------------------------------------------------- */ 
 /* @keyframes appear {
     from{
@@ -182,6 +186,25 @@ nav{
     color: rgb(0, 0, 0);
 }
 
+/* DARK BACKGROUND version */
+.dark-background #short-bio-container a{
+    font-family: "aileron", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.75rem;
+    text-decoration: none;
+    transition: 0.3s ease, transform 0.3s ease;
+    color:rgb(255, 255, 255);
+}
+
+#short-bio-container a:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color:rgb(255, 255, 255);
+}
+
+
 #short-bio-container p{
     font-family: "aileron", sans-serif;
     font-weight: 300;
@@ -252,6 +275,10 @@ nav{
         opacity: 1; /* Full opacity when hovering over the entire row */
       }
 
+
+#image-thumbnail{
+    border-radius: 3px;
+}
 
 /* HOME SCREEN FOOTER ----------------------------------------------------------------*/
 
