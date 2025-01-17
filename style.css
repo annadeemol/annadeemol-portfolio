@@ -33,6 +33,10 @@ img{
     border-radius: 5px;
 }
 
+video{
+    border-radius: 5px;
+}
+
 /* LOAD IN ANIMATION---------------------------------------------------------------------------- */ 
 /* @keyframes appear {
     from{
