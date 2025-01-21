@@ -21,18 +21,6 @@
         type="image/x-icon" />
    
     <!-- Password -->
-    <script>
-        function checkPassword() {
-          const password = document.getElementById("password").value;
-          const correctPassword = "mysecurepassword"; // Set your password here
-    
-          if (password === correctPassword) {
-            window.location.href = "protected.html"; // Redirect to the protected page
-          } else {
-            alert("Incorrect password. Please try again.");
-          }
-        }
-      </script>
         
   </head>
   <body class="light-background">
@@ -56,11 +44,86 @@
                       </div> -->
             </div>
         </nav>
+
+        <div id="work-description-container" class="col-3 d-flex" >
+          <table class="table work-description" style="width: 100%;">
+              <thead>
+                  <tr>
+                      <th><h1>VML</h1> <h3>UX/UI</h3></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                  </tr>
+                  <tr>
+                      <td><h3>TIMELINE</h3> 
+                          <p class="black">May - July 2023
+                            </p>
+                      </td>
+                      <td><h3>ROLE</h3> 
+                          <p class="black">UX/UI Intern</p>
+                      </td>
+                      <td>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="4"> 
+                          <p class="black">At VML, I prototyped mobile interfaces, and web experiences for various campaigns. Please reach out for more details!</a>
+      
+                              
+                          </p>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      
+          <!-- OTHER WORK -->
+          <div id="short-bio-container" class="d-flex position-absolute end-0 me-5" style="margin-top: 0%;">
+      
+              <!-- FIRST COLUMN WORK -->
+              <div class="pe-1 bio-content d-flex-column">
+                  <div class="pe-5 pt-2">
+                      <a class="nav-options white" href="index.html">OTHER WORK</a>
+                  </div>      
+                  <div id="Slot-1" class="pt-3">
+                      <a href="work_1.html">Piggy</a>
+                      <p>PRODUCT DESIGN</p>    
+                  </div>
+                  <div id="Slot-2">
+                      <a href="work_2.html">Humanizing Prostitution</a>
+                      <p>WEB EXPERIENCE</p>    
+                  </div>
+                  <div id="Slot-3">
+                      <a style="text-decoration: underline; color: black; font-weight: 400;" href="work_3.html">VML</a>
+                      <p>USER EXPERIENCE</p>    
+                  </div>
+              </div>
+      
+              <!-- SECOND COLUMN - WORK -->
+              <div class="ms-2 pt-4 bio-content d-flex-column">
+                  <br> 
+                  <div id="Slot-1">
+                      <a href="work_4.html">Koichi Sato</a>
+                      <p>MULTIMEDIA</p>    
+                  </div>
+                  <div id="Slot-2">
+                      <a href="work_5.html">A Million Lives</a>
+                      <p>BRANDING/MOTION</p>    
+                  </div>
+                  <div id="Slot-3">
+                      <a href="work_6.html">Bosang</a>
+                      <p>BRANDING SYSTEM</p>    
+                  </div>
+              </div>
+          </div>
+      </div> <!-- Closing the <div class="col-3 d-flex"> -->
         </header>
 
     <section id="password_enter">
-            <h1>Enter Password</h1>
-            <input type="password" id="password" placeholder="Password">
-            <button onclick="checkPassword()">Submit</button>
+      <div class="ps-2 pe-2">
+        <img id="image-thumbnail" src="../Images/home/vml_thumbnail.png" class="img-fluid" alt="VML">
+    </div>
+
+      
     </section>
   </body>
