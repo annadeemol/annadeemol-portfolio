@@ -232,7 +232,7 @@ nav{
 /* WORK SECTION --------------------------------------------------------------------------- */
 .work-thumbnails{
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 1rem;
 }
 
 .work-thumbnails h2{
@@ -257,7 +257,7 @@ nav{
         font-size: 0.6rem;
         letter-spacing: 0.04rem;
         line-height: 0.5rem;
-        color: #000000;
+        color: #ffffff;
     }
 
     .thumbnail-details p{
