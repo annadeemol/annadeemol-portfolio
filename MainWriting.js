@@ -29,21 +29,21 @@ document.getElementById('back-to-top').addEventListener('click', function () {
 
 
 // Carousel -----------------------------------------
-const swiper = new Swiper('.swiper-container', {
-  direction: 'horizontal',
-  loop: true,
-        slidesPerView: 1, // Ensure only one slide is visible
-        spaceBetween: 0,
+// const swiper = new Swiper('.swiper-container', {
+//   direction: 'horizontal',
+//   loop: true,
+//         slidesPerView: 1, // Ensure only one slide is visible
+//         spaceBetween: 0,
   
-        navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-  },
-});
+//         navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//   },
+//   pagination: {
+//       el: '.swiper-pagination',
+//       clickable: true,
+//   },
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.swiper-container', {
